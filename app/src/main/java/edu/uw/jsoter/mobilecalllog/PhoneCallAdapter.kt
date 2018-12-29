@@ -1,7 +1,6 @@
 package edu.uw.jsoter.mobilecalllog
 
 import android.content.Context
-import android.support.v4.content.ContextCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,8 +12,12 @@ private data class ViewHolder constructor(
     val callDateView: TextView,
     val callDirectionView: TextView
 )
-class PhoneCallAdapter(context: Context, layout: Int, data: List<PhoneCall>) : ArrayAdapter<PhoneCall>(context, layout, data) {
 
+/*
+ * This class is used to create custom adapters for handling PhoneCalls
+ * author: John Soter
+ */
+class PhoneCallAdapter(context: Context, layout: Int, data: List<PhoneCall>) : ArrayAdapter<PhoneCall>(context, layout, data) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View? {
         var retView = convertView
