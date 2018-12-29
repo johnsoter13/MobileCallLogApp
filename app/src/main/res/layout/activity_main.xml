@@ -7,18 +7,10 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-
-    <LinearLayout
-            android:id="@+id/container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
         <ListView
                 android:id="@+id/phonecall_list_view"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
-
-    </LinearLayout>
 
 </android.support.v4.widget.SwipeRefreshLayout>

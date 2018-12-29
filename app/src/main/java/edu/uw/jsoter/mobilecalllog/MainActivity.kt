@@ -111,6 +111,7 @@ class MainActivity : AppCompatActivity() {
     // This function handles the results of requesting permissions from the user
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         when (requestCode) {
+            // when request is a to read phone call logs
             PHONE_CALL_REQUEST_CODE -> {
                 if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     getPhoneCalls()
