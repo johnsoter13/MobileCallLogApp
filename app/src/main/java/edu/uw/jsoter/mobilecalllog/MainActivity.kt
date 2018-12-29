@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity() {
                 val callDate = managedCursor.getString(date)
                 val callType = managedCursor.getString(direction)
                 // check to see if call is Outgoing or Incoming
-                var callDirection: String = if (callType.toInt() == CallLog.Calls.OUTGOING_TYPE) "OUTGOING" else "INCOMING"
+                val callDirection: String = if (callType.toInt() == CallLog.Calls.OUTGOING_TYPE) "OUTGOING" else "INCOMING"
                 // format Date into a readable string
                 val formattedDate = SimpleDateFormat("h:mm a M/d/yy", Locale.getDefault()).format(callDate.toLong())
                 // check to see if SDK is greater than Nougat to allow us to format phone number

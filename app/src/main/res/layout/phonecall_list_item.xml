@@ -3,7 +3,8 @@
               android:orientation="horizontal"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:minHeight="?android:attr/listPreferredItemHeight">
+              android:minHeight="?android:attr/listPreferredItemHeight"
+              android:baselineAligned="false">
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -29,7 +30,7 @@
         <TextView
                 android:id="@+id/callDirection"
                 android:textStyle="bold"
-                android:gravity="right"
+                android:gravity="end"
                 style="@style/TextStyle"/>
     </LinearLayout>
 </LinearLayout>

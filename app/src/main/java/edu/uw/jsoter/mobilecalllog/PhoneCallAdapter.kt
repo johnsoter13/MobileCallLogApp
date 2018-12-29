@@ -35,9 +35,9 @@ class PhoneCallAdapter(context: Context, layout: Int, data: List<PhoneCall>) : A
         val data: PhoneCall? = getItem(position)
         retView.tag = holder
         // add content to xml items
-        holder.phoneNumberView.text = ("${data!!.phoneNumber}")
-        holder.callDateView.text = ("${data!!.callDate}")
-        holder.callDirectionView.text = ("${data!!.callDirection}")
+        holder.phoneNumberView.text = (data!!.phoneNumber)
+        holder.callDateView.text = (data!!.callDate)
+        holder.callDirectionView.text = (data!!.callDirection)
 
         return retView
     }
