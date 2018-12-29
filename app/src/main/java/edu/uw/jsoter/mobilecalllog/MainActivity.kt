@@ -9,7 +9,6 @@ import android.provider.CallLog
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.telephony.PhoneNumberUtils
-import android.util.Log
 import android.widget.ListView
 import java.text.SimpleDateFormat
 import java.util.*
